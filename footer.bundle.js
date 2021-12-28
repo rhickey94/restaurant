@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/home.js":
-/*!*********************!*\
-  !*** ./src/home.js ***!
-  \*********************/
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction homepage() {\n\n  console.log(\"henlo from home\")\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homepage);\n\n\n//# sourceURL=webpack://new-restaurant/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction footer() {\n  const footerEl = document.createElement(\"footer\")\n\n  footerEl.innerHTML = \"Copyright &copy; The Odin Project 2021\";\n\n  return footerEl;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footer);\n\n//# sourceURL=webpack://new-restaurant/./src/footer.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/home.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/footer.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;
