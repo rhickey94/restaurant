@@ -1,3 +1,9 @@
 import "./style.css"
+import header from "./header"
+import background from "./background"
+import homepage from "./home"
 
-console.log("hii")
+const hook = document.querySelector("#content")
+
+hook.appendChild(header())
+hook.appendChild(background())

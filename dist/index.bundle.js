@@ -120,13 +120,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/background.js":
+/*!***************************!*\
+  !*** ./src/background.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction background() {\n  const mainEl = document.createElement(\"main\");\n\n  return mainEl;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (background);\n\n\n//# sourceURL=webpack://new-restaurant/./src/background.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction header() {\n  const NAV_ITEMS = [\"Home\", \"Menu\", \"Contact\"];\n\n  const header = document.createElement(\"header\");\n\n  const tagline = document.createElement(\"div\");\n  tagline.setAttribute(\"id\", \"header\");\n  tagline.innerHTML = \"Restaurant!\";\n\n  const nav = document.createElement(\"nav\");\n  const ul = document.createElement(\"ul\");\n  for (let i = 0; i < NAV_ITEMS.length; i++) {\n    const li = document.createElement(\"li\");\n    li.innerHTML = NAV_ITEMS[i];\n    ul.appendChild(li);\n  }\n  nav.appendChild(ul);\n\n  header.appendChild(tagline);\n  header.appendChild(nav);\n\n  return header;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n\n//# sourceURL=webpack://new-restaurant/./src/header.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction homepage() {\n\n  console.log(\"henlo from home\")\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homepage);\n\n\n//# sourceURL=webpack://new-restaurant/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconsole.log(\"hii\")\n\n//# sourceURL=webpack://new-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _background__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./background */ \"./src/background.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\n\n\nconst hook = document.querySelector(\"#content\")\n\nhook.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\nhook.appendChild((0,_background__WEBPACK_IMPORTED_MODULE_2__[\"default\"])())\n\n//# sourceURL=webpack://new-restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -250,7 +280,7 @@ eval("module.exports = __webpack_require__.p + \"0812674c60421f107771.jpg\";\n\n
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"main": 0
+/******/ 			"index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
