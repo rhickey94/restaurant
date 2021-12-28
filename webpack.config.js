@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     background: './src/background.js',
-    home: './src/home.js',
+    homepage: './src/homepage.js',
     footer: './src/footer.js'
   },
   plugins: [

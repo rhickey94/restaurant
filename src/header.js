@@ -5,13 +5,13 @@ function header() {
 
   const tagline = document.createElement("div");
   tagline.setAttribute("id", "header");
-  tagline.innerHTML = "Restaurant!";
+  tagline.textContent = "Restaurant!";
 
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
   for (let i = 0; i < NAV_ITEMS.length; i++) {
     const li = document.createElement("li");
-    li.innerHTML = NAV_ITEMS[i];
+    li.textContent = NAV_ITEMS[i];
     ul.appendChild(li);
   }
   nav.appendChild(ul);
