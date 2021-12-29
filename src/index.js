@@ -1,8 +1,11 @@
 import "./style.css";
-import header from "./header";
-import background from "./background";
-import homepage from "./homepage";
-import footer from "./footer";
+import header from "./components/header";
+import background from "./components/background";
+import homepage from "./components/homepage";
+import footer from "./components/footer";
+
+import contact from "./components/contact"
+import menu from "./components/menu"
 
 function pageSetup(hook) {
   hook.appendChild(header());
@@ -18,8 +21,10 @@ function selectModule(choice) {
       selectedModule = homepage();
       break;
     case "Menu":
+      selectedModule = menu();
       break;
     case "Contact":
+      selectedModule = contact();
       break;
   }
 

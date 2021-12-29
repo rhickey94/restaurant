@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
-    background: './src/background.js',
-    homepage: './src/homepage.js',
-    footer: './src/footer.js'
+    // background: './src/components/background.js',
+    // homepage: './src/components/homepage.js',
+    // footer: './src/components/footer.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
